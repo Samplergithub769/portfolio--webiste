@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shaily-Singh</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+     <title>Firebase_form</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+          * {
+               margin: 0;
+               padding: 0;
+
+          }
+
+          body {
+               background-color: rgb(0, 0, 44);
+               color: white;
+               font-family: 'Poppins', sans-serif;
+          }
+
+          nav {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               height: 80px;
+               background-color: rgb(4, 4, 60);
+          }
+
+          nav ul {
+
+               display: flex;
+               justify-content: center;
+
+          }
+
+          nav ul li {
+               list-style: none;
+               margin: 0 23px;
+          }
+
+          nav ul li a {
+               text-decoration: none;
+               color: white;
+          }
+
+
+          nav ul li a:hover {
+
+               color: lavender;
+               font-size: 1.03rem;
+          }
+
+          main hr {
+               border: 0;
+               background-color: rgb(72, 72, 193);
+               height: 1.2px;
+               margin: 60px 84px;
+
+          }
+
+
+          .left {
+               front-size: 2rem;
+          }
+
+          .firstSection {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               margin: 140px 0;
+
+          }
+
+
+          .firstSection>div {
+               width: 30%;
+          }
+
+          .leftsection {
+
+               font-size: 2rem;
+          }
+
+          .leftsection .button {
+               padding: 30px 0;
+          }
+
+          .leftsection .btn {
+               padding: 10px;
+               background: rgb(40 40 134);
+               color: white;
+               border-radius: 6px;
+               border: 2px solid white;
+               font-size: 12px;
+               cursor: pointer;
+
+          }
+
+
+
+
+
+          .rightsection img {
+               width: 80%;
+               margin: 0px 0;
+
+          }
+
+          .purple {
+
+               color: rgb(171, 115, 224);
+          }
+
+          .text-gray {
+               color: gray;
+          }
+
+          #element {
+               color: rgb(171, 115, 224);
+
+          }
+
+          .secondsection {
+               max-width: 80vw;
+               margin: auto;
+               height: 80vh;
+          }
+
+          .secondsection h1 {
+               font-size: 1.9rem;
+          }
+
+          .secondsection .box {
+               background: white;
+               width: 82vw;
+               height: 2px;
+               margin: 56px 0;
+               display: flex;
+          }
+
+          .secondsection .vertical {
+
+               height: 93px;
+               width: 1px;
+               background: white;
+               margin: 0 6vw;
+          }
+
+          .image-top {
+               width: 23px;
+               position: relative;
+               top: -32px;
+               left: -9px;
+
+          }
+
+          .vertical-title {
+               position: relative;
+               top: 100px;
+               width: 150px;
+               
+              
+          }
+
+          .vertical-desc {
+               position: relative;
+               top: 111px;
+               color: gray;
+               width: 150px;
+               font-size: 9px;
+          }
+
+          footer {
+               background-color: rgb(16 16 79);
+
+          }
+
+          .footer {
+               display: flex;
+               padding: 23px 122px;
+               justify-content: space-evenly;
+
+          }
+
+          .footer ul {
+               list-style: none;
+          }
+
+          .footer>div {
+               width: 223;
+          }
+
+          footer .text-right {
+               text-align: center;
+               color: gray;
+               padding: 12px 0;
+          }
+          /*contact section styling*/
+          .contactform{
+
+                padding:0 34px;
+                font-family: 'Fira Sans', sans-serif; 
+                font-size:20px; 
+                
+                 
+           }
+           .contactform h1{
+                font-family: 'Source Code Pro', monospace;
+                margin:0 20px;
+                font-size:40px;
+                padding:12px 0;
+
+           
+           }
+           .contactform form div{
+                padding:8px 0;
+                display:flex;
+                flex-direction:column;
+           
+           }
+           .contactform form div input{
+                /*width:30vw;*/
+                border-radius:5px;
+                margin:6px 0;
+                padding:6px;
+                background-color:rgba(255, 255, 255, 0.896);
+           }
+           .contactform form{
+                margin:0 30px;
+           }
+           
+           #emailHelp{
+                font-size:11px;
+                color:white;
+                margin:0 5px;
+                padding:0 0 ;
+           }
+           #form-check{
+                flex-direction: row;
+               
+           }
+           #form-check-input{
+               width: 24px;
+               margin:3px 0;
+               
+           
+           }
+           .sub{
+               padding:7px;
+               border-radius:27px;
+               color:white;
+               background-color:white;
+               font-weight:bold;
+               font-size:19px;
+               margin:0 7px;
+               cursor:pointer;
+          
+          
+          }
+          .sub{
+               font-size:18px;
+               padding: 7px 13px;
+               margin:10px 0;
+               color:rgb(16 16 79);
+          }
+          
+          @media screen and (max-width: 1400px) {
+               body {
+
+                    background-color: red;
+               }
+
+               .box {
+                    flex-direction: column;
+               }
+
+               .secondsection .vertical {
+                    height: unset;
+               }
+
+               .vertical-title,
+               .vertical-desc {
+                    left: 45px;
+               }
+
+               nav {
+                    flex-direction: column;
+               }
+
+               .firstSection {
+                    flex-direction: column-reverse;
+               }
+
+               .leftsection {
+                    width: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+               }
+
+               .secondsection {
+                    height: 141vh;
+               }
+
+               .rightsection {
+                    width: 72% !important;
+                    display: flex;
+                    justify-content: center;
+               }
+
+               .rightsection img {
+                    width: 45vw;
+                    margin-bottom: 73px;
+               }
+
+               .image-top {
+                    top: 100px;
+
+               }
+
+               .secondsection {
+                    max-width: 80vw;
+                    margin: auto;
+                    height: 175vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <nav>
+               <div class="left>">Shaily's Portfolio</div>
+               <div class="right">
+                    <ul>
+                         <li><a href="/">Home</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/services.html">Services</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+                    </ul>
+
+               </div>
+          </nav>
+     </header>
+
+     <main>
+          <div class="contactform">
+               <h1>Contact for work/general Enquiries</h1>
+               <form id="form">
+                    <div class="inputbox">
+                         <span>Name</span>
+                         <input type="text"  value="" id="username"required>
+                        
+                    </div>
+                    <div class="inputbox">
+                         <span>Email</span>
+                         <input type="text"  value="" id="email"required>
+                         
+                    </div>
+                    <div class="inputbox">
+                         <span>Phone</span>
+                         <input type="text"  value="" id="phone"required>
+                         
+                    </div>
+                    <div class="inputbox">
+                         <span>Enquiry</span>
+                         <input type="text"  value="" id="enquiry"required>
+                         
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <input type="submit" value="submit" class="sub" id="submit">
+               </form>
+          </div>
+     </main>
+          
+
+     <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+          import { getDatabase,ref,set,get,child } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+         
+        
+          // Your web app's Firebase configuration
+          
+          const firebaseConfig = {
+            apiKey: "AIzaSyBISaXyCpI4gUWltt7GUJAtpDm7nYQuA9o",
+            authDomain: "singnup-30d60.firebaseapp.com",
+            projectId: "singnup-30d60",
+            storageBucket: "singnup-30d60.appspot.com",
+            messagingSenderId: "180407753122",
+            appId: "1:180407753122:web:52d757606f50a4529bfafb",
+            measurementId: "G-PCB1BNFEVP"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const db=getDatabase(app);
+          document.getElementById("submit").addEventListener('click',function(e){
+               e.preventDefault();
+               set(ref(db,'user/'+ document.getElementById("username").value),
+               {
+                  Name:document.getElementById("username").value,
+                  Email:document.getElementById("email").value,
+                  Phone:document.getElementById("phone").value,
+                  Enquiry:document.getElementById("enquiry").value,
+                 
+               });
+               alert("successfully submit!"); 
+               document.getElementById('form').reset(); 
+          })
+          
+     </script>
+     
+
+          
+</body>
+
+</html>

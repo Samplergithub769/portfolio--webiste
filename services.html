@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shaily-Singh </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/8dfb884216.js" crossorigin="anonymous"></script>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+          * {
+               margin: 0;
+               padding: 0;
+
+          }
+
+          body {
+               background-color: rgb(0, 0, 44);
+               color: white;
+               font-family: 'Poppins', sans-serif;
+          }
+
+          nav {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               height: 80px;
+               background-color: rgb(4, 4, 60);
+          }
+
+          nav ul {
+
+               display: flex;
+               justify-content: center;
+
+          }
+
+          nav ul li {
+               list-style: none;
+               margin: 0 23px;
+          }
+
+          nav ul li a {
+               text-decoration: none;
+               color: white;
+          }
+
+
+          nav ul li a:hover {
+
+               color: lavender;
+               font-size: 1.03rem;
+          }
+
+          main hr {
+               border: 0;
+               background-color: rgb(72, 72, 193);
+               height: 1.2px;
+               margin: 60px 84px;
+
+          }
+
+
+          .left {
+               front-size: 2rem;
+          }
+
+          .firstSection {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               margin: 140px 0;
+
+          }
+
+
+          .firstSection>div {
+               width: 30%;
+          }
+
+          .leftsection {
+
+               font-size: 2rem;
+          }
+
+          .leftsection .button {
+               padding: 30px 0;
+          }
+
+          .leftsection .btn {
+               padding: 10px;
+               background: rgb(40 40 134);
+               color: white;
+               border-radius: 6px;
+               border: 2px solid white;
+               font-size: 12px;
+               cursor: pointer;
+
+          }
+
+
+
+
+
+          .rightsection img {
+               width: 80%;
+               margin: 0px 0;
+
+          }
+
+          .purple {
+
+               color: rgb(171, 115, 224);
+          }
+
+          .text-gray {
+               color: gray;
+          }
+
+          #element {
+               color: rgb(171, 115, 224);
+
+          }
+
+          .secondsection {
+               max-width: 80vw;
+               margin: auto;
+               height: 80vh;
+          }
+
+          .secondsection h1 {
+               font-size: 1.9rem;
+          }
+
+          .secondsection .box {
+               background: white;
+               width: 82vw;
+               height: 2px;
+               margin: 56px 0;
+               display: flex;
+          }
+
+          .secondsection .vertical {
+
+               height: 93px;
+               width: 1px;
+               background: white;
+               margin: 0 6vw;
+          }
+
+          .image-top {
+               width: 23px;
+               position: relative;
+               top: -32px;
+               left: -9px;
+
+          }
+
+          .vertical-title {
+               position: relative;
+               top: 100px;
+               width: 150px;
+               
+              
+          }
+
+          .vertical-desc {
+               position: relative;
+               top: 111px;
+               color: gray;
+               width: 150px;
+               font-size: 9px;
+          }
+
+          footer {
+               background-color: rgb(16 16 79);
+
+          }
+
+          .footer {
+               display: flex;
+               padding: 23px 122px;
+               justify-content: space-evenly;
+
+          }
+
+          .footer ul {
+               list-style: none;
+          }
+
+          .footer>div {
+               width: 223;
+          }
+
+          footer .text-right {
+               text-align: center;
+               color: gray;
+               padding: 12px 0;
+          }
+          /*service section styling*/
+          .servicecontainer{
+               width:100%;
+               height:100vh;
+              
+              
+          
+          }
+          .servicecontainer h3{
+               margin:3px 0; 
+               text-align:center;
+               padding-top:20px;
+               margin-bottom:60px;
+               font-weight:600;
+               position:relative;
+               font-size:40px;
+               font-family: 'Poppins', sans-serif;
+          }
+          
+          .servicecontainer h3::after{
+               content:'';
+               background:white;
+               width:155px;
+               height:5px;position:absolute;
+               bottom:-5px;
+               left:50%;
+               transform:translateX(-50%);
+          }
+          .row{
+               
+               display:grid;
+               grid-template-columns: repeat(4,1fr);
+               justify-content:center;
+               align-items:center;
+               text-align:center;
+               grid-gap:5rem;
+               padding:1rem 80px;
+               font-size:1.2rem;
+               
+               
+          
+          }
+          .services{
+               text-align:center;
+               padding:25px 10px;
+               border-radius:5px;
+               font-size:14px;
+               cursor:pointer;
+               background:transparent;
+               transition: transform  0.5s, background  0.5s;
+          
+          }
+          .services i{
+               font-size:40px;
+                margin-bottom:10px;
+                color:#303ef7; 
+          }
+          .services h4{
+                font-weight:600;
+                 margin-bottom:8px;
+                 font-family: 'Poppins', sans-serif;
+          
+          }
+          .services:hover{
+               background:#303ef7;
+               color:#fff;
+                transform:scale(1.05);
+          
+          }
+          .services:hover i{
+                 color:#fff;
+          }
+          .services p{
+               font-family: 'Source Code Pro', monospace;
+          }
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          @media screen and (max-width: 1400px) {
+               body {
+
+                    background-color: red;
+               }
+
+               .box {
+                    flex-direction: column;
+               }
+
+               .secondsection .vertical {
+                    height: unset;
+               }
+
+               .vertical-title,
+               .vertical-desc {
+                    left: 45px;
+               }
+
+               nav {
+                    flex-direction: column;
+               }
+
+               .firstSection {
+                    flex-direction: column-reverse;
+               }
+
+               .leftsection {
+                    width: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+               }
+
+               .secondsection {
+                    height: 141vh;
+               }
+
+               .rightsection {
+                    width: 72% !important;
+                    display: flex;
+                    justify-content: center;
+               }
+
+               .rightsection img {
+                    width: 45vw;
+                    margin-bottom: 73px;
+               }
+
+               .image-top {
+                    top: 100px;
+
+               }
+
+               .secondsection {
+                    max-width: 80vw;
+                    margin: auto;
+                    height: 175vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+               .row{
+                    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <nav>
+               <div class="left>">Shaily's Portfolio</div>
+               <div class="right">
+                    <ul>
+                         <li><a href="/">Home</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/services.html">Services</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+                    </ul>
+
+               </div>
+          </nav>
+     </header>
+
+     <main>
+         
+          <div class="servicecontainer">
+               <h3>Our Services</h3>
+               <div class="row">
+                    <div class="services">
+                         <i class="fa-solid fa-laptop-code"></i>
+                         <h4>Web Design</h4>
+                         <p>If you are looking for a developer who’ll take over the research and development of your website, I am a well-established professional to help you with this.</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-palette"></i>
+                         <h4>Graphics</h4>
+                         <p>It is a craft where professionals create visual content to communicate messages. By applying visual hierarchy designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs,</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-network-wired"></i>
+                         <h4>Networking</h4>
+                         <p>"In our networking services, we provide reliable and efficient solutions to connect your business with the world, ensuring seamless communication and data transfer."</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-file-invoice-dollar"></i>
+                         
+                         <h4>Accounting</h4>
+                         <p>"Our accounting services offer precision and expertise to streamline your financial processes, enabling sound decision-making and compliance."</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-chart-line"></i>
+                         <h4>Marketing</h4>
+                         <p>"Our marketing services drive growth and engagement through strategic campaigns that resonate with your audience, delivering results that matter."</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-chart-pie"></i>
+                         
+                         <h4>Data Analysis</h4>
+                         <p>"Our data analysis services unlock valuable insights from your data, empowering informed decisions and data-driven strategies."</p>
+                    </div>
+                    <div class="services">
+                         <i class="fa-solid fa-mobile-screen"></i>
+                         <h4>App Development</h4>
+                         <p>If you are looking for a user-friendly app that will attract more mobile users, I can help you design and build a platform with the latest and trendiest look and feel.</p>
+                    </div>
+                    <div class="services">   
+                         <i class="fa-regular fa-id-badge"></i>
+                         
+                         <h4>Payroll</h4>
+                         <p>"Our payroll services ensure accurate, on-time payments and compliance, allowing you to focus on your core business while we handle the finances."</p>
+                    </div>
+                    
+                    
+                    
+               </div>
+          </div>
+     </main>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+     <script>
+          var typed = new Typed('#element', {
+               strings: ['Web Developer'/* , 'Content Creator', 'Graphics Designer', 'Web designer', 'Video Editor' */],
+               typeSpeed: 50,
+          });
+     </script>
+</body>
+
+</html>

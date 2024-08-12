@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shaily-Singh </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="images/fav-icon.png">
+     <link rel="stylesheet" href="JS/lightbox.min.css"> 
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+
+          }
+
+          body {
+               background-color: rgb(0, 0, 44);
+               color: white;
+               font-family: 'Poppins', sans-serif;
+          }
+
+          nav {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               height: 80px;
+               background-color: rgb(4, 4, 60);
+          }
+
+          nav ul {
+
+               display: flex;
+               justify-content: center;
+
+          }
+
+          nav ul li {
+               list-style: none;
+               margin: 0 23px;
+          }
+
+          nav ul li a {
+               text-decoration: none;
+               color: white;
+          }
+
+
+          nav ul li a:hover {
+
+               color: lavender;
+               font-size: 1.03rem;
+          }
+
+          main hr {
+               border: 0;
+               background-color: rgb(72, 72, 193);
+               height: 1.2px;
+               margin: 60px 84px;
+
+          }
+
+
+          .left {
+               front-size: 2rem;
+          }
+
+          .firstSection {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               margin: 140px 0;
+
+          }
+
+
+          .firstSection>div {
+               width: 30%;
+          }
+
+          .leftsection {
+
+               font-size: 2rem;
+          }
+
+          .leftsection .button {
+               padding: 30px 0;
+          }
+
+          .leftsection .btn {
+               padding: 10px;
+               background: rgb(40 40 134);
+               color: white;
+               border-radius: 6px;
+               border: 2px solid white;
+               font-size: 12px;
+               cursor: pointer;
+
+          }
+
+
+
+
+
+          .rightsection img {
+               width: 80%;
+               margin: 0px 0;
+
+          }
+
+          .purple {
+
+               color: rgb(171, 115, 224);
+          }
+
+          .text-gray {
+               color: gray;
+          }
+
+          #element {
+               color: rgb(171, 115, 224);
+
+          }
+
+          .secondsection {
+               max-width: 80vw;
+               margin: auto;
+               height: 80vh;
+          }
+
+          .secondsection h1 {
+               font-size: 1.9rem;
+          }
+
+          .secondsection .box {
+               background: white;
+               width: 82vw;
+               height: 2px;
+               margin: 56px 0;
+               display: flex;
+          }
+
+          .secondsection .vertical {
+
+               height: 93px;
+               width: 1px;
+               background: white;
+               margin: 0 6vw;
+          }
+
+          .image-top {
+               width: 23px;
+               position: relative;
+               top: -32px;
+               left: -9px;
+
+          }
+
+          .vertical-title {
+               position: relative;
+               top: 100px;
+               width: 150px;
+               
+              
+          }
+
+          .vertical-desc {
+               position: relative;
+               top: 111px;
+               color: gray;
+               width: 150px;
+               font-size: 9px;
+          }
+
+          footer {
+               background-color: rgb(16 16 79);
+
+          }
+
+          .footer {
+               display: flex;
+               padding: 23px 122px;
+               justify-content: space-evenly;
+
+          }
+
+          .footer ul {
+               list-style: none;
+          }
+
+          .footer>div {
+               width: 223;
+          }
+
+          footer .text-right {
+               text-align: center;
+               color: gray;
+               padding: 12px 0;
+          }
+          /* project section styling*/
+           a{
+               text-decoration: none;
+           }
+           ul{
+               list-style: none;
+           }
+           
+          .project{
+               font-family: 'Poppins';
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               margin: 50px 0px;
+           }
+           .project-heading{
+               margin-top: 20px;
+               display: flex;
+               flex-direction: column;
+           }
+           .project-heading h3{
+               font-size: 2.9rem;
+               font-weight: 600;
+               text-transform: uppercase;
+               color: white;
+           }
+           .project-heading span{
+               color: #f33c3c;
+               font-size:1.4rem;
+           }
+           .project-filter{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-top: 20px;
+               border: 1px solid rgb(237, 237, 237,0.6);
+               flex-wrap: wrap;
+               margin: 20px;
+           }
+           .project-filter li{
+               margin: 10px;
+               padding: 5px 20px;
+               color: #9b9b9b;
+               font-size: 1.3rem;
+               letter-spacing: 0.5px;
+               font-weight: 400;
+               cursor: pointer;
+               user-select: none;
+           }
+           .project-filter-active{
+               background-color: #f0f0f0;
+               color: #272727 !important;
+           }
+           .project-container{
+               display:flex;
+              
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               max-width: 1200px;
+               margin: auto;
+           }
+           .project-box{
+               width:330px;
+               padding: 15px;
+               border: 1px solid #eeeeee;
+               margin: 20px;
+   
+          }
+          .project-box img{
+               width: 100%;
+               height: 100%;
+               border-radius: 5px;
+               overflow: hidden;
+           }
+            
+           @media(max-width:740px){
+               .project-filter{
+                    background-color: #f9f9f9;
+                    border: 1px solid rgba(0, 0, 0, 0.05);
+                 }
+                .project-filter-active{
+                    background-color: #ffffff;
+                    border: 1px solid rgb(219, 219, 219);
+                }
+                .project-box{
+                    width:80%;
+                }
+          }
+          @media(max-width:550px){
+               .project-heading h3
+               {
+                   font-size:1.8rem;
+               }
+              }
+          @media screen and (max-width: 1400px) {
+               body {
+
+                    background-color: red;
+               }
+
+               .box {
+                    flex-direction: column;
+               }
+
+               .secondsection .vertical {
+                    height: unset;
+               }
+
+               .vertical-title,
+               .vertical-desc {
+                    left: 45px;
+               }
+
+               nav {
+                    flex-direction: column;
+               }
+
+               .firstSection {
+                    flex-direction: column-reverse;
+               }
+
+               .leftsection {
+                    width: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+               }
+
+               .secondsection {
+                    height: 141vh;
+               }
+
+               .rightsection {
+                    width: 72% !important;
+                    display: flex;
+                    justify-content: center;
+               }
+
+               .rightsection img {
+                    width: 45vw;
+                    margin-bottom: 73px;
+               }
+
+               .image-top {
+                    top: 100px;
+
+               }
+
+               .secondsection {
+                    max-width: 80vw;
+                    margin: auto;
+                    height: 175vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <nav>
+               <div class="left>">Shaily's Portfolio</div>
+               <div class="right">
+                    <ul>
+                         <li><a href="/">Home</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/services.html">Services</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+                    </ul>
+               </div>
+          </nav>
+     </header>
+
+     <main>
+          <div class ="project">
+
+               <!--heading--------------->
+               <div class="project-heading">
+                   <span>Let's See My Work</span>
+                   <h3>MY PROJECTS</h3>
+               </div>
+               <!--filter----------------->
+               <ul class="project-filter">
+                    <li class="list project-filter-active" data-filter="all">All</li>
+                    <li class="list" data-filter="app">Application</li>
+                    <li class="list" data-filter="design" >App Design</li>
+                    <li class="list" data-filter="web">Website Designs</li>
+                    <li class="list" data-filter="ai">AI</li>
+               </ul>
+               <!--container--------->
+               <div class="project-container">
+                    <!--box-1---(about-app)--------->
+                    <a href="images/b-1.jpg" class="project-box app" data-lightbox="work"> 
+                         <img src="images/b-1.jpg" alt="work">
+                    </a>
+                    <!--box-2--(about-website)---------->
+                    <a href="images/b-2.jpg" class="project-box web" data-lightbox="work">
+                         <img  src="images/b-2.jpg" alt="work">
+                    </a>
+                    <!--box-3---(about-ai)--------->
+                    <a href="images/b-3.jpg" class="project-box ai" data-lightbox="work">
+                         <img src="images/b-3.jpg" alt="work">
+                    </a>
+                    <!--box-4---(about-design)--------->
+                    <a href="images/b-4.jpg" class="project-box design" data-lightbox="work">
+                         <img src="images/b-4.jpg" alt="work">
+                    </a>
+                    <!--box-5---(about-design)--------->
+                    <a href= "images/b-5.jpg" class="project-box design" data-lightbox="work">
+                         <img src="images/b-5.jpg" alt="work">
+                    </a>
+      
+                    <!--box-6---(about-app)--------->
+                    <a href="images/b-6.jpg" class="project-box app" data-lightbox="work">
+                         <img src="images/b-6.jpg" alt="work">
+                    </a>
+                   
+               </div>
+               
+          </div>
+     </main>
+     <script src="JS/jquery-3.7.1.min.js"></script>
+     <script src="JS/lightbox.min.js"></script>
+     <script type="text/javascript">
+          
+          
+           /*for-filter-menu----------------------------*/
+         $(document).on('click', '.project-filter li', function () {
+          $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+      });
+       /*for-project/work-filter---------------------------------*/
+       $(document).ready(function () {
+          $('.list').click(function () {
+              const value = $(this).attr('data-filter');
+              if (value == 'all'){
+                  $('.project-box').show('1000');
+              }
+              else {
+                  $('.project-box').not('.' + value).hide('1000');
+                  $('.project-box').filter('.' + value).show('1000');
+              }
+          });
+      });
+
+     
+
+     
+             
+          
+      
+     </script>
+     
+  
+        
+ 
+</body>
+
+</html>
